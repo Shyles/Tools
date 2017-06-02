@@ -1,0 +1,17 @@
+[push]
+	default = simple
+[pull]
+	rebase = true
+[core]
+	excludesfile = /Users/Ola/.gitignore_global
+	commentchar = ";"
+[user]
+	name = Ola L
+	email = ola.lansman@relexsolutions.com
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aD>%Creset' --abbrev-commit
+    lga = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lgh = log --color --graph --pretty=format:'%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an> %Cgreen(%cr) %C(bold blue)<%cn>%Creset' --abbrev-commit
+    lgcsv = log --pretty=format:'%h|%s|%ar|%an|%cr|%cn' --abbrev-commit
+    lgcsvt = log --pretty=format:'%h|%s|%at|%an|%ct|%cn' --abbrev-commit
+    lgtt = log --pretty=format:'%at|%ct|%an|%cn|%s' --abbrev-commit
